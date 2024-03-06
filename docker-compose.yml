@@ -1,0 +1,27 @@
+version: '3'
+services:
+  directus:
+    image: directus/directus:latest
+    ports:
+      - 8055:8055
+    volumes:
+      - ./:/directus/extensions/directus-extension-umami
+    environment:
+      PUBLIC_URL: 'http://localhost:8055'
+      KEY: 'a82945e6-bc64-4495-9029-03a27aa70d5f'
+      SECRET: '0e5cf189-a4d0-42ce-b401-fd2dc00caee1 '
+      ADMIN_EMAIL: 'admin@example.com'
+      ADMIN_PASSWORD: 'password'
+      DB_CLIENT: 'sqlite3'
+      DB_FILENAME: '/directus/database/data.db'
+      WEBSOCKETS_ENABLED: true
+      MARKETPLACE_TRUST: 'all'
+      EXTENSIONS_AUTO_RELOAD: true
+      CONTENT_SECURITY_POLICY_DIRECTIVES__SCRIPT_SRC: "'self' 'unsafe-eval' '${UMAMI_SRC_HOST}'"
+      UMAMI_SRC: ${UMAMI_SRC}
+      UMAMI_WEBSITE_ID: ${UMAMI_WEBSITE_ID}
+      UMAMI_HOST_URL: ${UMAMI_HOST_URL}
+      UMAMI_AUTO_TRACK: ${UMAMI_AUTO_TRACK}
+      UMAMI_CACHE: ${UMAMI_CACHE}
+      UMAMI_DOMAINS: ${UMAMI_DOMAINS}
+      UMAMI_DEBUG: ${UMAMI_DEBUG}

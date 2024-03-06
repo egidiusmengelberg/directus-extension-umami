@@ -1,0 +1,46 @@
+{
+  "name": "directus-extension-umami",
+  "description": "Add Umami analytics to Directus",
+  "homepage": "https://github.com/egidiusmengelberg/directus-extension-umami#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egidiusmengelberg/directus-extension-umami.git"
+  },
+  "bugs": {
+    "url": "https://github.com/egidiusmengelberg/directus-extension-umami/issues",
+    "email": "hello@egidius.io"
+  },
+  "author": "Egidius Mengelberg <hello@egidius.io> (https://egidius.io)",
+  "icon": "extension",
+  "version": "0.0.0",
+  "keywords": [
+    "directus",
+    "directus-extension",
+    "directus-custom-hook",
+    "umami",
+    "analytics"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "directus:extension": {
+    "type": "hook",
+    "path": "dist/index.js",
+    "source": "src/index.ts",
+    "host": "^10.3.4"
+  },
+  "scripts": {
+    "build": "directus-extension build",
+    "dev": "directus-extension build -w --no-minify",
+    "link": "directus-extension link",
+    "lint": "standard --fix src/**/*.ts",
+    "lint-ci": "standard src/**/*.ts",
+    "release": "npm run lint && npm run build && changelogen --release --push --publish"
+  },
+  "devDependencies": {
+    "@directus/extensions-sdk": "10.3.4",
+    "@types/node": "^20.11.24",
+    "changelogen": "^0.5.5",
+    "standard": "^17.1.0",
+    "typescript": "^5.3.3"
+  }
+}
