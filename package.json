@@ -12,7 +12,7 @@
   },
   "author": "Egidius Mengelberg <hello@egidius.io> (https://egidius.io)",
   "icon": "extension",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "directus",
     "directus-extension",
