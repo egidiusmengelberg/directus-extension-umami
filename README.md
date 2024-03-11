@@ -1,4 +1,5 @@
-<p align="center"><a href="https://github.com/egidiusmengelberg/directus-extension-umami"><img alt="Directus Extension Umami Logo" src="https://assets.egidius.io/public/packages/directus-extension-umami.png" width="1000px"></a></p>
+![Header](docs/header.png)
+
 
 # Umami Directus Extension
 This project is a directus extension for integrating Umami analytics. It's configurable using environment variables.
