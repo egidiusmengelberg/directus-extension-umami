@@ -1,4 +1,4 @@
-![Header](docs/header.png)
+![Header](https://raw.githubusercontent.com/egidiusmengelberg/directus-extension-umami/main/docs/header.png)
 
 
 # Umami Directus Extension
