@@ -40,7 +40,7 @@
     "release": "npm run lint && npm run build && changelogen --release --push --publish"
   },
   "devDependencies": {
-    "@directus/extensions-sdk": "11.0.4",
+    "@directus/extensions-sdk": "11.0.6",
     "@types/node": "^20.11.24",
     "changelogen": "^0.5.5",
     "standard": "^17.1.0",
