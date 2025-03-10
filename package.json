@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@directus/extensions-sdk": "11.0.4",
-    "@types/node": "^20.11.24",
+    "@types/node": "^22.13.10",
     "changelogen": "^0.5.5",
     "standard": "^17.1.0",
     "typescript": "^5.3.3"
